@@ -2,12 +2,15 @@ Sub CSVToXML()
     'Coordinates of data table (first row reserved for column names)
     Dim Row As Integer
     Dim Column As Integer
+    
     'Coordinates of xml code
     Dim RowXML As Integer
     Dim ColumnXML As Integer
+    
     'Starting coordinate for XML code
     RowXML = 1
     ColumnXML = 11
+    
     'Replace 470 with last row of your table and 9 with last column of your table
     Dim LastRow As Integer
     LastRow = 470
