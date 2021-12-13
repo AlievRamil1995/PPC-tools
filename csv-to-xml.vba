@@ -17,7 +17,9 @@ Sub CSVToXML()
     Dim LastColumn As Integer
     LastColumn = 9
     
-    Cells(RowXML, ColumnXML) = "<?xml version=" & Chr(34) & "1.0" & Chr(34) & "?><rss xmlns:g=" & Chr(34) & "http://base.google.com/ns/1.0" & Chr(34) & " version=" & Chr(34) & "2.0" & Chr(34) & ">"
+    Cells(RowXML, ColumnXML) = "<?xml version=" & Chr(34) & "1.0" & Chr(34) & "?>"
+    RowXML = RowXML + 1
+    Cells(RowXML, ColumnXML) = "<rss xmlns:g=" & Chr(34) & "http://base.google.com/ns/1.0" & Chr(34) & " version=" & Chr(34) & "2.0" & Chr(34) & ">"
     RowXML = RowXML + 1
     Cells(RowXML, ColumnXML) = "<channel>"
     RowXML = RowXML + 1
